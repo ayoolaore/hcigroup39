@@ -1,0 +1,167 @@
+
+
+body{
+background: #f7f5f0;
+}
+
+.button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonBack{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.buttonProceed{
+    background-color: #00c402;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+  }
+.buttonProceed .a:hover {
+    color: white;
+    transform: scale(3) rotate(0);
+  }
+.center {
+    border: 3px solid red;
+    margin-top: -11cm; 
+    margin-bottom: 1cm;
+    margin-left: 10cm;
+    margin-right: 10cm;
+    background: white;
+}
+
+header {
+    text-align: center;
+    overflow: hidden;
+    padding-top: 60px;
+  }
+
+  header {
+    line-height: 1.5;
+  }
+
+main {
+    text-align: center;
+    overflow: hidden;
+  }
+main {
+    line-height: 1.5;
+  }
+
+  .headings
+  {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+  }
+
+  .info-text{
+
+    text-align: center;
+      color: black;
+      font-size: 25px;
+      word-spacing: 30px;
+  }
+
+  .text-box
+  {
+    border: 1px solid black;
+    height:50px;
+    font-size:15pt;
+    width: 80%;
+  }
+
+  
+
+/* Section Styles */
+  
+.main-nav {
+    width: 100%;
+    background:red;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .nav .name {
+    display: none;
+  }
+  .nav li {
+    padding: 5px 10px 10px 10px;
+  }
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Styles for larger screens */
+  @media screen and (min-width: 720px) {
+    
+    .flex {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+  
+    header {
+      min-height: 450px;
+    }
+  
+    .nav {
+      max-width: 1200px;
+    }
+  
+    .nav .name {
+      display: block;
+      margin-right: auto;
+      color: black;
+    }
+    
+  
+    main {
+      padding-top: 50px;
+    }
+  
+    main p {
+      line-height: 1.6em;
+    }
+  
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+  
+  }
+  

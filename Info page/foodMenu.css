@@ -1,0 +1,283 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+  }
+    
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background: white;
+  }
+  /*-----------------------------------------------------------------------------------*/
+  /* proceed and back buttons */
+  /*-----------------------------------------------------------------------------------*/
+
+.button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonBack{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.buttonProceed{
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.buttonAdd{
+    background-color: green;
+    width: 20%;
+    position: absolute;
+    bottom: 7.5%;
+    right: 50%;
+    left:40%;
+}
+
+
+/*this is for when hovering over a button*/
+a {
+    text-decoration: none;
+    color:white;
+  }
+.buttonProceed .a:hover {
+    color: white;
+    transform: scale(3) rotate(0);
+  }
+  
+
+/*-----------------------------------------------------------------------------------------*/
+  
+
+
+/*-----------------------------------------------------------------------------------*/
+/* this creates the center box we are goiong to use */
+/*-----------------------------------------------------------------------------------*/
+  
+  
+  .center {
+    background-color: white;
+    border: 3px solid blue;
+    margin-top: -10cm; 
+    margin-bottom: 1cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    height: 500px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* classes for menu item images not useful for you, only for victory */
+/*-----------------------------------------------------------------------------------*/
+
+ .item-image
+{
+  margin-top: 0.1cm;
+  margin-left: -20cm;
+  width: 200px;
+  height: 200px;
+  border-radius: 0%;
+  border: 0px solid red;
+  transition: all .5s;
+}
+.item-image:hover{
+    transform: scale(1);
+}
+.button_group{
+    margin-top: 0.1cm;
+    margin-left: -20cm;
+}
+#subtract
+{
+    margin-left: 0%;
+    width: 1cm;
+}
+#add
+{
+    margin-left: 3cm;
+    width: 1cm;
+}
+#num
+{
+    margin-left: 10%;
+    width: 10%;
+}
+
+.item-image1
+{
+  margin-top: 0.5cm;
+  margin-left: -20cm;
+  width: 200px;
+  height: 200px;
+  border-radius: 0%;
+  border: 0px solid red;
+  transition: all .5s;
+}
+
+.move-text
+{
+    margin-top: -0.5cm;
+}
+
+.item-image2
+{
+    margin-top: -13.2cm;
+    margin-left: 0cm;
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    border: 0px solid red;
+    transition: all .5s;
+}
+
+.button_group2{
+    margin-top: -7.8cm;
+    margin-left: 0cm;
+}
+
+
+.item-image3
+{
+  margin-top: 0.5cm;
+  margin-left: 0cm;
+  width: 200px;
+  height: 200px;
+  border-radius: 0%;
+  border: 0px solid red;
+  transition: all .5s;
+}
+.button_group3{
+    margin-top: 0.125cm;
+    margin-left: 0cm;
+}
+
+
+.item-image4
+{
+  margin-top: -13.2cm;
+  margin-left: 20cm;
+  width: 200px;
+  height: 200px;
+  border-radius: 0%;
+  border: 0px solid red;
+  transition: all .5s;
+}
+.button_group4{
+    margin-top: -7.8cm;
+    margin-left: 20cm;
+}
+
+
+.item-image5
+{
+  margin-top: 0.5cm;
+  margin-left:20cm;
+  width: 200px;
+  height: 200px;
+  border-radius: 0%;
+  border: 0px solid red;
+  transition: all .5s;
+}
+.button_group5{
+    margin-top: 0.125cm;
+    margin-left: 20cm;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* header tag */
+/*-----------------------------------------------------------------------------------*/
+
+header {
+    text-align: center;
+    overflow: hidden;
+    padding-top: 60px;
+  }
+  /* Section Styles */
+  
+
+/*-----------------------------------------------------------------------------------*/
+/* this is the file for creating the top header that contains the search, language
+tags and U-ORDER label */
+/*-----------------------------------------------------------------------------------*/
+
+  .main-nav {
+    width: 100%;
+    background: blue;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .nav .name {
+    display: none;
+  }
+  .nav li {
+    padding: 5px 10px 10px 10px;
+  }
+  
+  /* Styles for larger screens */
+  @media screen and (min-width: 720px) {
+    
+    .flex {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+  
+    header {
+      min-height: 450px;
+    }
+  
+    .nav {
+      max-width: 1200px;
+    }
+  
+    .nav .name {
+      display: block;
+      margin-right: auto;
+      color: black;
+    }
+    
+  
+    main {
+      padding-top: 50px;
+    }
+  
+    main p {
+      line-height: 1.6em;
+    }
+  
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+  
+  }
+  
+  
+  
