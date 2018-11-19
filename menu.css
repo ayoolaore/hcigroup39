@@ -1,0 +1,287 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+  }
+    
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background: #f7f5f0;
+  }
+  /*-----------------------------------------------------------------------------------*/
+  /* proceed and back buttons */
+  /*-----------------------------------------------------------------------------------*/
+
+.button {
+    background-color: #ff5913;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonBack{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.buttonProceed{
+    position: absolute;
+    background-color: #00c402;
+    bottom: 0;
+    right: 0;
+}
+
+/*this is for when hovering over a button*/
+a {
+    text-decoration: none;
+    color:white;
+  }
+.buttonProceed .a:hover {
+    color: white;
+    transform: scale(3) rotate(0);
+  }
+  
+
+/*-----------------------------------------------------------------------------------------*/
+  
+
+
+/*-----------------------------------------------------------------------------------*/
+/* this creates the center box we are goiong to use */
+/*-----------------------------------------------------------------------------------*/
+  
+  
+  .center {
+    background-color: white;
+    border: 3px solid black;
+    margin-top: -7cm; 
+    margin-bottom: 1cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    height: 500px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* classes for menu item images not useful for you, only for victory */
+/*-----------------------------------------------------------------------------------*/
+
+.centeblack {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.item-image:hover{
+    transform: scale(1);
+}
+.button_group{
+    margin-top: 0.1cm;
+    margin-left: -20cm;
+}
+#subtract
+{
+    margin-left: 0cm;
+    width: 1cm;
+}
+#add
+{
+    margin-left: 3cm;
+    width: 1cm;
+}
+
+ .item-image
+{
+	margin-left: 2.08%;
+	margin-right: 2.08%;
+	marging-top: 1.67%;
+  	marging-bottom: 1.67%;
+  	width: 25%;
+  	height: 45%;
+}
+
+
+.item-image1
+{
+	margin-left: 2.08%;
+	margin-right: 2.08%;
+  	marging-bottom: 3%;
+  	marging-top: 1.67%;
+  	width: 25%;
+  	height: 45%;
+}
+
+.item-image2
+{
+  	margin-left: 2.08%;
+ 
+	margin-right: 2.08%;
+ 	margin-top: 1.67%;
+  	marging-bottom: 1.67%;
+  	width: 25%;
+  	height: 45%;
+}
+
+
+.item-image3
+{
+ 
+ 
+	margin-right: 2.08%;
+ 	margin-left: 2.08%;
+  	marging-top: 1.67%;
+  	marging-bottom: 1.67%;
+  	width: 25%;
+  	height: 45%;
+}
+
+
+.item-image4
+{
+ 	margin-left: 2.08%;
+	margin-right: 2.08%;
+	marging-bottom: 1.67%;
+  	marging-top: 1.67%;
+  	width: 25%;
+  	height: 45%;
+}
+
+
+.item-image5
+{
+ 	margin-left: 2.08%;
+	margin-right: 2.08%;
+  	marging-top: 1.67%;
+  	marging-bottom: 1.67%;
+  	width: 25%;
+  	height: 45%;
+}
+/*-----------------------------------------------------------------------------------*/
+/* header tag */
+/*-----------------------------------------------------------------------------------*/
+
+header {
+    text-align: center;
+    overflow: hidden;
+    padding-top: 60px;
+  }
+  /* Section Styles */
+  
+
+/*-----------------------------------------------------------------------------------*/
+/* this is the file for creating the top header that contains the search, language
+tags and U-ORDER label */
+/*-----------------------------------------------------------------------------------*/
+
+  .main-nav {
+    width: 100%;
+    background: black;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .nav .name {
+  	background: white;
+  	color: white;
+    display: none;
+  }
+  .nav li 
+  {
+    padding: 5px 10px 10px 10px;
+  }
+  
+  .main-nav .welcome {
+    float: right;
+    padding: auto;
+    border: solid;
+    color: white;
+    border-color: black;
+    margin-top: auto;
+    margin-right: absolute;
+    font-size: 17px;
+}
+  
+  .main-nav .search {
+    float: center;
+    padding: auto;
+    border: solid;
+    border-color: black;
+    margin-top: auto;
+    margin-right: auto;
+    font-size: 17px;
+}
+  .main-nav .previous {
+  	
+  	background-color: black;
+  	color: white;
+    float: left;
+    padding: auto;
+    border: solid;
+    text-decoration: bold;
+    border-color: black;
+    margin-top: auto;
+    margin-left: absolute;
+    font-size: 17px;
+    cursor: pointer;
+}
+  /* Styles for larger screens */
+  @media screen and (min-width: 720px) {
+    
+    .flex {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+  
+    header {
+      min-height: 450px;
+    }
+  
+    .nav {
+      max-width: 1200px;
+    }
+  
+    .nav .name {
+      display: block;
+      margin-right: auto;
+      color: black;
+    }
+    
+  
+    main {
+      padding-top: 50px;
+    }
+  
+    main p {
+      line-height: 1.6em;
+    }
+  
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+  
+  }
+  
