@@ -2,74 +2,87 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Menu item page</title>
+                <title>Menu item page</title>
+        <link rel="stylesheet"   href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" >
         <link rel="stylesheet" href="foodMenu.css">
         <script src="foodMenu.js"></script>
 	</head>
 
-	<body>
+	<body background="back4.jpg">
+        
 
-    <div class="main-nav">
+        <div class="main-nav">
+        
         <ul class="nav">
-          <li class="name">U-ORDER</li>
+          <li class="name">Welcome to U-ORDER</li>
           
+          <li> 
+                <div class="search-container">
+                        <form >
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                </div></li>
+         
           <li>EN</li>
           <li>FR</li>
         </ul>
-    </div>
-    <header></header>
-    
+        </div>
+        <header></header>
+        
 	<div class="center">
         
         <img src="ribs.jpg" alt="Bibimbab bowl" class="item-image">
         <div class="button_group">
-                <button id="subtract">-</button>
+                <button id="subtract" onclick="Decrease()">-</button> 
                 <button id="add" onclick="increment()">+</button>
+                <div class="text">Caption Two</div>
                 <p class="move-text" id="firstItem">0</p>
         </div>
 
         <img src="Webp.net-resizeimage.png" alt="Bibimbab bowl" class="item-image1">
         <div class="button_group">
-                <button id="subtract">-</button>   
-                <button id="add" onclick="increment()">+</button>
+                <button id="subtract" onclick="DecreaseFirst()">-</button> 
+                <button id="add" onclick="incrementFirst()">+</button>
                 <p class="move-text" id="secondItem">0</p>
                 
                         
         </div>
 
-        <img src="lobstertail.jpeg" alt="Bibimbab bowl" class="item-image2">
+        <img src="lobstertail.jpeg" alt="Lobster tal" class="item-image2">
         <div class="button_group2">
-                <button id="subtract">-</button>   
-                <button id="add" onclick="increment()">+</button>
-                <p class="move-text" id="thridItem">0</p>
+                <button id="subtract" onclick="DecreaseSecond()">-</button> 
+                <button id="add" onclick="incrementSecond()">+</button>
+                <p class="move-text" id="thirdItem">0</p>
         </div>
                 
         <img src="salmondynamiteroll.jpg" alt="Bibimbab bowl" class="item-image3">
         <div class="button_group3">
-                <button id="subtract">-</button>   
-                <button id="add" onclick="increment()">+</button>
+                <button id="subtract" onclick="DecreaseThird()">-</button> 
+                <button id="add" onclick="incrementThird()">+</button>
                 <p class="move-text" id="fourthItem">0</p>
 
         </div>
 
         <img src="bibimbab.jpeg" alt="Bibimbab bowl" class="item-image4">
         <div class="button_group4">
-                <button id="subtract">-</button>   
-                <button id="add" onclick="increment()">+</button>
+                <button id="subtract" onclick="DecreaseFourth()">-</button> 
+                <button id="add" onclick="incrementFourth()">+</button>
                 <p class="move-text" id="fifthItem">0</p>
         </div>
                 
         <img src="friedprawns.jpeg" alt="Bibimbab bowl" class="item-image5">
         <div class="button_group5">
-                <button id="subtract">-</button>   
-                <button id="add" onclick="increment()">+</button>
+                <button id="subtract" onclick="DecreaseFifth()">-</button> 
+                <button id="add" onclick="incrementFifth()">+</button>
                 <p class="move-text" id="sixItem">0</p>
+                <p>Friend prawns</p>
 
         </div>
 
     </div>
     <footer>
-        <button class="button buttonBack">BACK</button>
+                <a href="test.html"><button class="button buttonBack"> BACK</button></a>
         <button class="button buttonAdd">ADD TO ORDER</button>
         <a href="infoPage.html"><button class="button buttonProceed"> PROCEED</button></a>
     </footer>

@@ -39,7 +39,7 @@ a {
     transform: scale(3) rotate(0);
   }
 .center {
-    border: 3px solid red;
+    border: 3px solid black;
     margin-top: -11cm; 
     margin-bottom: 1cm;
     margin-left: 10cm;
@@ -94,7 +94,7 @@ main {
   
 .main-nav {
     width: 100%;
-    background:red;
+    background:black;
     min-height: 30px;
     padding: 10px;
     position: fixed;
@@ -110,9 +110,11 @@ main {
   }
   .nav .name {
     display: none;
+    color: white;
   }
   .nav li {
     padding: 5px 10px 10px 10px;
+    color: white;
   }
   
  
@@ -145,7 +147,7 @@ main {
     .nav .name {
       display: block;
       margin-right: auto;
-      color: black;
+      color: white;
     }
     
   

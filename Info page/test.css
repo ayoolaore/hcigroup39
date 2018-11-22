@@ -1,0 +1,348 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+  }
+    
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+  
+  }
+  /*-----------------------------------------------------------------------------------*/
+  /* proceed and back buttons */
+  /*-----------------------------------------------------------------------------------*/
+
+
+  
+.button {
+    background-color: #ff5913;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonBack{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.buttonProceed{
+    background-color:  #00c402;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.buttonAdd{
+    background-color:  #00c402;
+    width: 20%;
+    position: absolute;
+    bottom: 7.5%;
+    right: 50%;
+    left:40%;
+}
+
+
+/*this is for when hovering over a button*/
+a {
+    text-decoration: none;
+    color:white;
+  }
+.buttonProceed .a:hover {
+    color: white;
+    transform: scale(3) rotate(0);
+  }
+  
+
+/*-----------------------------------------------------------------------------------------*/
+  
+
+
+/*-----------------------------------------------------------------------------------*/
+/* this creates the center box we are goiong to use */
+/*-----------------------------------------------------------------------------------*/
+  
+  
+  .center {
+    background-color: white;
+    border: 3px solid black;
+    margin-top: -10cm; 
+    margin-bottom: 1cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    height: 500px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* classes for menu item images not useful for you, only for victory */
+/*-----------------------------------------------------------------------------------*/
+
+ .center .item-image
+{
+  margin-top: 0.5%;
+  margin-left: -65%;
+  width: 200px;
+  height: 200px;
+  border-radius: 0%;
+  border: 0px solid red;
+  transition: all .5s;
+}
+.item-image:hover{
+    transform: scale(1);
+}
+
+
+.button_group{
+    margin-top: 0%;
+    margin-left: -65%;
+}
+#subtract
+{
+    margin-left: 0%;
+    width: 1cm;
+    background-color: #ff5913
+}
+#add
+{
+    margin-left: 3cm;
+    width: 1cm;
+    background-color: #00c402
+}
+#num
+{
+    margin-left: 10%;
+    width: 10%;
+}
+
+.center .item-image1
+{
+  margin-top: 1%;
+  margin-left: -65%;
+  width: 200px;
+  height: 200px;
+  border-radius: 0%;
+  border: 0px solid red;
+  transition: all .5s;
+  position: relative;
+}
+
+.move-text
+{
+    margin-top: -0.5cm;
+}
+
+
+.item-image2
+{
+    margin-top: -42.25%;
+    margin-left: 0%;
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+    border: 0px solid red;
+    transition: all .5s;
+    position: relative;
+}
+
+ .button_group2{
+    margin-top: -24.75%;
+    margin-left: 0%;
+}
+
+
+.item-image3
+{
+  margin-top: 1%;
+  margin-left: 0%;
+  width: 200px;
+  height: 200px;
+  border-radius: 0%;
+  border: 0px solid red;
+  transition: all .5s;
+  position: relative;
+}
+.button_group3{
+    margin-top: 0.125%;
+    margin-left: 0%;
+}
+
+.item-image4
+{
+  margin-top: -42.25%;
+  margin-left: 65%;
+  width: 200px;
+  height: 200px;
+  border-radius: 0%;
+  border: 0px solid red;
+  transition: all .5s;
+  position: relative;
+}
+.button_group4{
+  margin-top: -24.75%;
+  margin-left: 65%;
+}
+
+
+.item-image5
+{
+  margin-top:1%;
+  margin-left:65%;
+  width: 200px;
+  height: 200px;
+  border-radius: 0%;
+  border: 0px solid red;
+  transition: all .5s;
+  position: relative;
+}
+.button_group5{
+  margin-top: 0.125%;
+  margin-left: 65%;
+}
+
+.text {
+  color: red;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* header tag */
+/*-----------------------------------------------------------------------------------*/
+
+header {
+    text-align: center;
+    overflow: hidden;
+    padding-top: 60px;
+  }
+  /* Section Styles */
+  
+
+/*-----------------------------------------------------------------------------------*/
+/* this is the file for creating the top header that contains the search, language
+tags and U-ORDER label */
+/*-----------------------------------------------------------------------------------*/
+
+  .main-nav {
+    width: 100%;
+    background: black;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    color: WHITE; 
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  
+  
+ .nav .welcome {
+   
+    color: white;
+  
+    display: block;
+    margin-right: auto;
+    
+  
+    font-size: 17px;
+}
+  
+  .nav .search-container {
+    float: center;
+    padding: auto;
+    border: solid;
+    border-color: black;
+    margin-top: auto;
+  
+    font-size: 20px;
+}
+.nav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  
+
+  background: #ddd;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+  .nav .name {
+      
+      color: WHITE; 
+      font-size: 100%;
+      margin-right: auto;
+  }
+  .nav li {
+   
+
+    padding: 5px 10px 10px 10px;
+    color: WHITE; 
+    font-size: 17px;
+  }
+  
+  /* Styles for larger screens */
+  @media screen and (min-width: 720px) {
+    
+    .flex {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+  
+    header {
+      min-height: 450px;
+    }
+  
+    .nav {
+      max-width: 1200px;
+    }
+  
+    .nav .name {
+      
+      margin-right: auto;
+      color: WHITE; 
+      font-size: 100%;
+    }
+    
+  
+    main {
+      padding-top: 50px;
+    }
+  
+    main p {
+      line-height: 1.6em;
+    }
+  
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+  
+  }
+  
+  
+  

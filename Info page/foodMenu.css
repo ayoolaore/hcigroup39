@@ -8,15 +8,17 @@
     padding: 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: #222;
-    background: white;
+
+  
   }
   /*-----------------------------------------------------------------------------------*/
   /* proceed and back buttons */
   /*-----------------------------------------------------------------------------------*/
 
+
+  
 .button {
-    background-color: red;
+    background-color: #ff5913;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -35,14 +37,14 @@
 }
 
 .buttonProceed{
-    background-color: green;
+    background-color:  #00c402;
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
 .buttonAdd{
-    background-color: green;
+    background-color:  #00c402;
     width: 20%;
     position: absolute;
     bottom: 7.5%;
@@ -73,7 +75,7 @@ a {
   
   .center {
     background-color: white;
-    border: 3px solid blue;
+    border: 3px solid black;
     margin-top: -10cm; 
     margin-bottom: 1cm;
     margin-left: 2cm;
@@ -85,10 +87,10 @@ a {
 /* classes for menu item images not useful for you, only for victory */
 /*-----------------------------------------------------------------------------------*/
 
- .item-image
+ .center .item-image
 {
-  margin-top: 0.1cm;
-  margin-left: -20cm;
+  margin-top: 0.5%;
+  margin-left: -65%;
   width: 200px;
   height: 200px;
   border-radius: 0%;
@@ -98,19 +100,23 @@ a {
 .item-image:hover{
     transform: scale(1);
 }
+
+
 .button_group{
-    margin-top: 0.1cm;
-    margin-left: -20cm;
+    margin-top: 0%;
+    margin-left: -65%;
 }
 #subtract
 {
     margin-left: 0%;
     width: 1cm;
+    background-color: #ff5913
 }
 #add
 {
     margin-left: 3cm;
     width: 1cm;
+    background-color: #00c402
 }
 #num
 {
@@ -118,15 +124,16 @@ a {
     width: 10%;
 }
 
-.item-image1
+.center .item-image1
 {
-  margin-top: 0.5cm;
-  margin-left: -20cm;
+  margin-top: 1%;
+  margin-left: -65%;
   width: 200px;
   height: 200px;
   border-radius: 0%;
   border: 0px solid red;
   transition: all .5s;
+  position: relative;
 }
 
 .move-text
@@ -134,68 +141,82 @@ a {
     margin-top: -0.5cm;
 }
 
+
 .item-image2
 {
-    margin-top: -13.2cm;
-    margin-left: 0cm;
+    margin-top: -42.25%;
+    margin-left: 0%;
     width: 200px;
     height: 200px;
     border-radius: 0%;
     border: 0px solid red;
     transition: all .5s;
+    position: relative;
 }
 
-.button_group2{
-    margin-top: -7.8cm;
-    margin-left: 0cm;
+ .button_group2{
+    margin-top: -24.75%;
+    margin-left: 0%;
 }
 
 
 .item-image3
 {
-  margin-top: 0.5cm;
-  margin-left: 0cm;
+  margin-top: 1%;
+  margin-left: 0%;
   width: 200px;
   height: 200px;
   border-radius: 0%;
   border: 0px solid red;
   transition: all .5s;
+  position: relative;
 }
 .button_group3{
-    margin-top: 0.125cm;
-    margin-left: 0cm;
+    margin-top: 0.125%;
+    margin-left: 0%;
 }
-
 
 .item-image4
 {
-  margin-top: -13.2cm;
-  margin-left: 20cm;
+  margin-top: -42.25%;
+  margin-left: 65%;
   width: 200px;
   height: 200px;
   border-radius: 0%;
   border: 0px solid red;
   transition: all .5s;
+  position: relative;
 }
 .button_group4{
-    margin-top: -7.8cm;
-    margin-left: 20cm;
+  margin-top: -24.75%;
+  margin-left: 65%;
 }
 
 
 .item-image5
 {
-  margin-top: 0.5cm;
-  margin-left:20cm;
+  margin-top:1%;
+  margin-left:65%;
   width: 200px;
   height: 200px;
   border-radius: 0%;
   border: 0px solid red;
   transition: all .5s;
+  position: relative;
 }
 .button_group5{
-    margin-top: 0.125cm;
-    margin-left: 20cm;
+  margin-top: 0.125%;
+  margin-left: 65%;
+}
+
+.text {
+  color: red;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -217,7 +238,7 @@ tags and U-ORDER label */
 
   .main-nav {
     width: 100%;
-    background: blue;
+    background: black;
     min-height: 30px;
     padding: 10px;
     position: fixed;
@@ -225,17 +246,60 @@ tags and U-ORDER label */
   }
   .nav {
     display: flex;
+    color: WHITE; 
     justify-content: space-around;
     font-weight: 700;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
   }
+
+  
+  
+ .nav .welcome {
+   
+    color: white;
+  
+    display: block;
+    margin-right: auto;
+    
+  
+    font-size: 17px;
+}
+  
+  .nav .search-container {
+    float: center;
+    padding: auto;
+    border: solid;
+    border-color: black;
+    margin-top: auto;
+  
+    font-size: 20px;
+}
+.nav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  
+
+  background: #ddd;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
   .nav .name {
-    display: none;
+      
+      color: WHITE; 
+      font-size: 100%;
+      margin-right: auto;
   }
   .nav li {
+   
+
     padding: 5px 10px 10px 10px;
+    color: WHITE; 
+    font-size: 17px;
   }
   
   /* Styles for larger screens */
@@ -257,9 +321,10 @@ tags and U-ORDER label */
     }
   
     .nav .name {
-      display: block;
+      
       margin-right: auto;
-      color: black;
+      color: WHITE; 
+      font-size: 100%;
     }
     
   
