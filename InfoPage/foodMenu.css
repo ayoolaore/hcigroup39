@@ -87,20 +87,47 @@ a {
 /* classes for menu item images not useful for you, only for victory */
 /*-----------------------------------------------------------------------------------*/
 
- .center .item-image
+ .item-image
 {
   margin-top: 0.5%;
-  margin-left: -65%;
+  margin-left: 7.5%;
   width: 200px;
   height: 200px;
   border-radius: 0%;
   border: 0px solid red;
   transition: all .5s;
+  position: relative;
 }
 .item-image:hover{
     transform: scale(1);
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-right: 15%;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.item-image:hover .overlay {
+  opacity: 1;
+}
+
+.text1
+{
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 25%;
+  margin-top: 25%;
+}
 
 .button_group{
     margin-top: 0%;
